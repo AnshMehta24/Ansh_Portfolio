@@ -66,6 +66,20 @@ html, body{
 }
 
 
+.rightSide2 a::after{
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition: width .3;
+}
+
+.rightSide2 a:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+
 
 .rightSide2{
     width: 50%;
@@ -605,9 +619,53 @@ margin-top: 1vw;
     pointer-events: none;
 }
 
+.fullScr {
+    height: 100%;
+    position: fixed;
+    background-color: #00000070;
+    width: 100%;
+    z-index: 99;
+    top: -100%;
+    transition: all ease 0.5s;
+    display: none;
+    backdrop-filter: blur(5px);
+}
+
+.full_div1 {
+    height: 80%;
+    transition: all ease 0.5s;
+    width: 100%;
+    background-color: #EFEAE3;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.full_div1 a{
+    text-decoration: none;
+}
+.full_div1 a h1{
+    margin-top: 1vw;
+    top: 10vh;
+    position: relative;
+    color: #000;
+    left: 7vw;
+    font-size: 13vw;
+}
+
+#cancelIcon{
+    position: relative;
+    color: white;
+    font-size: 4rem;
+    cursor: pointer;
+    display: none;
+    left: 85%;
+}
 
 
 @media (max-width:420px) {
+    .full_div1 {
+        height: 60%;
+    }
    #menuIcon{
     display: block;
    }
@@ -877,6 +935,11 @@ margin-left: 0vw;
 
 
 @media (min-width:421px) and (max-width:600px){
+
+    .full_div1 {
+        height: 50%;
+    }
+
   .rightSide2{
     display: none;
   }
@@ -1152,6 +1215,10 @@ margin-left: 0vw;
 
 /* Tablet Styles (Small to Medium Screens) */
 @media (min-width: 601px) and (max-width: 1023px) {
+
+    #menuIcon{
+        display: none;
+    }
     .rightSide2{
         width: 60%;
         margin-right: 2rem;
@@ -1420,6 +1487,12 @@ margin-left: 0vw;
 
 /* Desktop Styles (Large Screens) */
 @media (min-width:1024px) and (max-width:1439px){
+    .rightSide2{
+        width: 80%;
+    }
+    .rightSide2 a{
+        font-size: 2.5  rem;
+    }
 
     .anotherImage{
         width: 150%;

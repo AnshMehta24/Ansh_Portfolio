@@ -130,3 +130,38 @@ document.querySelectorAll(".elem").forEach(function (elem) {
           borderBottomColor: "#fff",
           duration: 0.5 
       });
+
+
+      const menuIcon = document.getElementById('menuIcon');
+      const cancelIcon = document.getElementById('cancelIcon');
+      let fullScr = document.querySelector('.fullScr');
+      
+      let flag=0;
+      menuIcon.addEventListener('click', ()=>{
+         if(flag===0){
+            flag=1;
+            // menuIcon.classList.add('hidden');
+            // cancelIcon.classList.remove('hidden');
+            // fullScr.style.top = "3%";
+            fullScr.style.display='block';
+            menuIcon.style.display='none';
+            cancelIcon.style.display='block';
+            fullScr.style.top = 0;
+      
+         }
+      })
+      
+      cancelIcon.addEventListener('click', () => {
+         if(flag===1){
+            flag=0;
+            // cancelIcon.classList.add('hidden');
+            // menuIcon.classList.remove('hidden');
+            menuIcon.style.display='block';
+            cancelIcon.style.display='none';
+            fullScr.style.top = "-100%"
+            fullScr.style.display='block';
+         }
+            
+            
+         });
+      
