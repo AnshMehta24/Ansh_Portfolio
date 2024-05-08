@@ -99,7 +99,7 @@ document.querySelectorAll(".elem").forEach(function (elem) {
 
   var tl2 = gsap.timeline({scrollTrigger:{
     trigger:'.re',
-    //  markers:true,
+   //   markers:true,
      start:"0% 30%",
      end:'70% 90%',
      scrub:true,
