@@ -44,9 +44,11 @@ To run this project locally, follow these steps:
   Simply open the index.html file in your preferred web browser to view the website locally.
 
 
-**Contributions**
-  Contributions, issues, and feature requests are welcome! Feel free to check the issues page to see the current project needs or open a new issue to suggest improvements.
+### Contributions
+- Contributions, issues, and feature requests are welcome! Feel free to check the issues page to see the current project needs or open a new issue to suggest improvements.
 
-**Contact**
-For any inquiries or feedback, you can reach me at:
+### Contact
+- For any inquiries or feedback, you can reach me at:
   Email: ansh.mehta.y24.com
+  
+### Thank you for checking out my project! Stay tuned for more updates as I continue to enhance and complete my portfolio website.
