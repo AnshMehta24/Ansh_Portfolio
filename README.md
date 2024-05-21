@@ -39,7 +39,7 @@ To run this project locally, follow these steps:
 
 2. **Navigate to the project directory:**
    ```sh
-   cd ansh-portfolio-website
+   cd Ansh_Portfolio
 3. **Open index.html in your web browser:**
   Simply open the index.html file in your preferred web browser to view the website locally.
 
