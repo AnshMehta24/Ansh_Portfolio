@@ -213,12 +213,14 @@
         <div id="Contact">
             <div class="hire">
                 <div class="Txt">
-                    <h1>Hire Me</h1>
-                    <form action="">
-                        <input type="text" name="" id="Name" placeholder="Your Name">
-                        <input type="email" name="" id="Email" placeholder="Your Email">
-                        <input type="text" name="" id="Subject" placeholder="Subject">
-                        <textarea name="" id="Message"  placeholder="Your Message" rows="3" id="textarea"></textarea>
+                    <h1>Contact Me</h1>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key"  id="accessKey">
+                        <input type="text" name="name" id="Name" placeholder="Your Name" autocomplete="off" required>
+                        <input type="email" name="email" id="Email" placeholder="Your Email" autocomplete="off" required >
+                        <input type="text" name="subject" id="Subject" placeholder="Subject" autocomplete="off" required>
+                        <textarea name="message" id="Message"  placeholder="Your Message" rows="3" id="textarea" autocomplete="off" required></textarea>
+                        <!-- <div class="h-captcha" data-captcha="true"></div> -->
                         <button type="submit">Send Message</button>
                     </form>
                 </div>
@@ -262,14 +264,13 @@
     </div>
 
 
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
         integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
         integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://web3forms.com/client/script.js" async defer></script>
     <script src="script.js"></script>
 </body>
 

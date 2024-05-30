@@ -648,8 +648,12 @@ margin-top: 1vw;
     color: black;
 }
 
+.h-captcha{
+    margin-top: 1vw;
+}
 
 @media (max-width:420px) {
+    
     .full_div1 {
         height: 60%;
     }
@@ -913,6 +917,10 @@ margin-left: 0vw;
     }
     .skillImg {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .h-captcha{
+        margin-top: 5vw;
     }
 
 }
