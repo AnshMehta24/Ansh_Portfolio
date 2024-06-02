@@ -33,6 +33,7 @@ function firstPageAnim() {
 }
 
 
+
 const tl3 = gsap.timeline({
     paused: "true",
     onComplete: function () {
