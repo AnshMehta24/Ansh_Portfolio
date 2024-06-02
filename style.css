@@ -194,6 +194,7 @@ body {
 
 .heroSpan {
     font-size: 6vw;
+    color: #fb7185;
 }
 
 .mainTxt h1 {
@@ -754,7 +755,9 @@ body {
 
 
 .form-group input:focus+label,
-.form-group textarea:focus+label {
+.form-group textarea:focus+label ,
+.form-group input:not(:placeholder-shown) + label,
+.form-group textarea:not(:placeholder-shown) + label{
     top: 0px;
     left: 10px;
     color: #ffffff;
@@ -762,10 +765,27 @@ body {
 }
 
 
+.text-wrapper {
+    font-weight: bold;
+    background: #262626 -webkit-gradient(linear, left top, right top, from(#262626), to(#262626), color-stop(0.5, #fff)) 0 0 no-repeat;
+    -webkit-background-size: 150px;
+    background-size: 150px;
+    color: rgba(255, 255, 255, 0.1);
+    -webkit-background-clip: text;
+    animation: animate 5s;
+    animation-iteration-count: 1;
+    font-size: 12vw;
+    font-family: BGT;
+}
+
 
 
 
 @media (max-width:420px) {
+
+    .text-wrapper{
+        font-size: 18vw;
+    }
 
     .full_div1 {
         height: 60%;
@@ -1052,6 +1072,8 @@ body {
     .h-captcha {
         margin-top: 5vw;
     }
+
+   
 
 }
 
@@ -1347,7 +1369,9 @@ body {
     }
 
 
-
+    .text-wrapper{
+        font-size: 18vw;
+    }
 
 
 }
@@ -1612,7 +1636,9 @@ body {
         height: 25rem;
     }
 
-
+    .text-wrapper{
+        font-size: 18vw;
+    }
 
 }
 
@@ -1744,20 +1770,6 @@ body {
         height: 26rem;
     }
 
-    #Name,
-    #Email,
-    #Subject,
-    #Message {
-        margin-top: 10px;
-        padding: 20px 30px;
-        font-size: 3vw;
-        width: 100%;
-        border-color: gray;
-        color: black;
-        border: 2px solid black;
-        border-radius: 0.375rem;
-    }
-
     .text {
         display: flex;
         align-items: center;
@@ -1797,7 +1809,9 @@ body {
         width: 100%;
     }
 
-
+    .text-wrapper{
+        font-size: 18vw;
+    }
 
 
 
@@ -1948,18 +1962,7 @@ body {
     src: url('./Assets/big_noodle_titling.ttf');
 }
 
-.text-wrapper {
-    font-weight: bold;
-    background: #262626 -webkit-gradient(linear, left top, right top, from(#262626), to(#262626), color-stop(0.5, #fff)) 0 0 no-repeat;
-    -webkit-background-size: 150px;
-    background-size: 150px;
-    color: rgba(255, 255, 255, 0.1);
-    -webkit-background-clip: text;
-    animation: animate 5s;
-    animation-iteration-count: 1;
-    font-size: 165px;
-    font-family: BGT;
-}
+
 
 @keyframes animate {
 
