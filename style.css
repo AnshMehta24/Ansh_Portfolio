@@ -49,7 +49,7 @@ body {
     top: 0;
     opacity: 1;
     width: 100%;
-    z-index: 99;
+    z-index: 9;
     background: transparent;
     border-radius: 9999px;
     overflow: hidden;
@@ -87,13 +87,17 @@ body {
     display: block;
     width: 0%;
     height: 2px;
-    background-color: #fff;
+    background-color: #fb7185;
     transition: width .3;
 }
 
 .rightSide2 a:hover::after {
     width: 100%;
     transition: width .3s;
+}
+
+.rightSide2 a:active{
+    color: #fb7185;
 }
 
 
@@ -215,13 +219,14 @@ body {
 
 .buttons button {
     border-radius: 9999px;
+    position: relative;
     width: 25%;
     height: 4rem;
     font-size: 1.875rem;
-    /* 30px */
     line-height: 2.25rem;
-    /* 36px */
 }
+
+
 
 /* .link{
     gap: 2vw;
@@ -234,6 +239,13 @@ body {
     align-items: center;
     gap: 2vw;
     font-size: 3vw;
+    /* box-shadow:  7px 7px 14px #d9d9d9,
+             -7px -7px 14px #ffffff; */
+}
+
+.link a:hover{
+    box-shadow: inset 1px 1px 5px #fb7185,
+             1px 1px 5px #fb7185;
 }
 
 .link a{
@@ -618,16 +630,17 @@ body {
     width: 100%;
     z-index: 99;
     top: -100%;
-    transition: all ease 0.5s;
-    display: none;
+    transition: top ease 0.5s;
+    /* display: none; */
     backdrop-filter: blur(5px);
+    overflow: hidden;
 }
 
 .full_div1 {
     height: 80%;
     transition: all ease 0.5s;
     width: 100%;
-    background-color: #EFEAE3;
+    background-color: #fb7185;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
@@ -636,11 +649,12 @@ body {
     text-decoration: none;
 }
 
-.full_div1 a h1 {
+.full_div1 a h2 {
+    width: fit-content;
     margin-top: 1vw;
     top: 10vh;
     position: relative;
-    color: #000;
+    color: #0f0f0f;
     left: 7vw;
     font-size: 13vw;
 }
@@ -799,8 +813,23 @@ body {
     font-family: BGT;
 }
 
-
-
+/* Toastr Css */
+.toast-success {
+    background-color: #28a745 !important; /* Green for success */
+    color: white !important;
+}
+.toast-error {
+    background-color: #dc3545 !important; /* Red for error */
+    color: white !important;
+}
+.toast-warning {
+    z-index: 100;
+    background-color: #ffbf00 !important; /* Yellow for warning */
+    color: black !important;
+}
+/* .toast {
+    opacity: 1 !important; 
+} */
 
 @media (max-width:420px) {
 

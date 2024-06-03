@@ -1,3 +1,22 @@
+toastr.options = {
+    "closeButton": true,
+    "debug": false,
+    "newestOnTop": true,
+    "progressBar": false,
+    "positionClass": "toast-bottom-right",
+    "preventDuplicates": false,
+    "onclick": null,
+    "showDuration": "300",
+    "hideDuration": "1000",
+    "timeOut": "5000",
+    "extendedTimeOut": "1000",
+    "showEasing": "swing",
+    "hideEasing": "linear",
+    "showMethod": "slideDown",
+    "hideMethod": "slideUp"
+};
+
+
 let tl4;
 function firstPageAnim() {
     tl4 = gsap.timeline();
@@ -31,6 +50,7 @@ function firstPageAnim() {
         opacity: 1
     }, 'same')
 }
+
 
 
 
@@ -119,36 +139,36 @@ document.addEventListener('DOMContentLoaded', () => {
             marginTop: "0%"
         })
 
-    document.querySelectorAll(".elem").forEach(function (elem) {
-        var rotate = 0;
-        var diffrot = 0;
+    // document.querySelectorAll(".elem").forEach(function (elem) {
+    // //     var rotate = 0;
+    // //     var diffrot = 0;
 
-        elem.addEventListener("mouseleave", function (dets) {
+    // //     elem.addEventListener("mouseleave", function (dets) {
 
-            gsap.to(elem.querySelector("img"), {
-                opacity: 0,
-                ease: Power3,
-                duration: 0.5,
-            });
-        });
+    // //         gsap.to(elem.querySelector("img"), {
+    // //             opacity: 0,
+    // //             ease: Power3,
+    // //             duration: 0.5,
+    // //         });
+    // //     });
 
-        elem.addEventListener("mousemove", function (dets) {
-
-
+    // //     elem.addEventListener("mousemove", function (dets) {
 
 
-            var diff = dets.clientY - elem.getBoundingClientRect().top;
-            diffrot = dets.clientX - rotate;
-            rotate = dets.clientX;
-            gsap.to(elem.querySelector("img"), {
-                opacity: 1,
-                ease: Power3,
-                top: diff,
-                left: dets.clientX,
-                rotate: gsap.utils.clamp(-30, 30, diffrot * 0.8),
-            });
-        });
-    });
+
+
+    // //         var diff = dets.clientY - elem.getBoundingClientRect().top;
+    // //         diffrot = dets.clientX - rotate;
+    // //         rotate = dets.clientX;
+    // //         gsap.to(elem.querySelector("img"), {
+    // //             opacity: 1,
+    // //             ease: Power3,
+    // //             top: diff,
+    // //             left: dets.clientX,
+    // //             rotate: gsap.utils.clamp(-30, 30, diffrot * 0.8),
+    // //         });
+    // //     });
+    //  });
 
 
     let currenScroll = 0;
@@ -236,10 +256,6 @@ document.addEventListener('DOMContentLoaded', () => {
     menuIcon.addEventListener('click', () => {
         if (flag === 0) {
             flag = 1;
-            // menuIcon.classList.add('hidden');
-            // cancelIcon.classList.remove('hidden');
-            // fullScr.style.top = "3%";
-            fullScr.style.display = 'block';
             menuIcon.style.display = 'none';
             cancelIcon.style.display = 'block';
             fullScr.style.top = 0;
@@ -250,12 +266,9 @@ document.addEventListener('DOMContentLoaded', () => {
     cancelIcon.addEventListener('click', () => {
         if (flag === 1) {
             flag = 0;
-            // cancelIcon.classList.add('hidden');
-            // menuIcon.classList.remove('hidden');
             menuIcon.style.display = 'block';
             cancelIcon.style.display = 'none';
             fullScr.style.top = "-100%"
-            fullScr.style.display = 'block';
         }
 
 
@@ -290,15 +303,18 @@ document.addEventListener('DOMContentLoaded', () => {
             .then(response => response.json())
             .then(data => {
                 if (data.success) {
-                    alert('Message sent successfully!');
+                    // alert('Message sent successfully!');
+                    toastr.success("Message sent successfully!", "Thank you");
                     form.reset();  // Reset the form after successful submission
                 } else {
-                    alert('Failed to send message. Please try again.');
+                    // alert('Failed to send message. Please try again.');
+                    toastr.warning("Failed to send message. Please try again later.", "Sorry!!!");
                 }
             })
             .catch(error => {
                 console.error('Error:', error);
-                alert('Failed to send message. Please try again.');
+                // alert('Failed to send message. Please try again.');
+                toastr.error("Failed to send message. Please try again.", "Sorry!!!");
             });
     });
 
@@ -322,7 +338,3 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(section);
     });
 });
-
-
-
-
