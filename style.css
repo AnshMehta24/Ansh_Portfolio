@@ -22,7 +22,6 @@ body {
     width: 100%;
     height: 100vh;
     background-color: black;
-    /* overflow-x: hidden; */
 }
 
 body {
@@ -96,7 +95,7 @@ body {
     transition: width .3s;
 }
 
-.rightSide2 a:active{
+.rightSide2 a:active {
     color: #fb7185;
 }
 
@@ -175,7 +174,6 @@ body {
 
 .mainTxt {
     color: white;
-    /* letter-spacing: -0.05em; */
     margin-left: 1.25rem;
     margin-top: 2.5rem;
     width: fit-content;
@@ -190,7 +188,6 @@ body {
 .mainTxt h2 {
 
     font-size: 6vw;
-    /* 48px */
     line-height: 1.1;
     letter-spacing: -0.05em;
 
@@ -226,29 +223,19 @@ body {
     line-height: 2.25rem;
 }
 
-
-
-/* .link{
-    gap: 2vw;
-    font-size: 13vw;
-    color: white;
-} */
-
-.link{
+.link {
     display: flex;
     align-items: center;
     gap: 2vw;
     font-size: 3vw;
-    /* box-shadow:  7px 7px 14px #d9d9d9,
-             -7px -7px 14px #ffffff; */
 }
 
-.link a:hover{
+.link a:hover {
     box-shadow: inset 1px 1px 5px #fb7185,
-             1px 1px 5px #fb7185;
+        1px 1px 5px #fb7185;
 }
 
-.link a{
+.link a {
     text-decoration: none;
     color: white;
 }
@@ -259,7 +246,6 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    /* height: 100vh; */
 }
 
 .anotherImage {
@@ -286,9 +272,7 @@ body {
 
 .msg {
     font-size: 1.875rem;
-    /* 30px */
     line-height: 2.25rem;
-    /* 36px */
     margin-left: 2.5rem;
     font-size: 1vw;
     margin-right: 2vw;
@@ -304,16 +288,12 @@ body {
 .skills h1 {
     text-align: center;
     font-size: 2.25rem;
-    /* 36px */
     line-height: 2.5rem;
-    /* 40px */
 }
 
 .skills h2 {
     font-size: 1.5rem;
-    /* 24px */
     line-height: 2rem;
-    /* 32px */
     text-align: center;
     margin-top: 1vw;
 }
@@ -507,16 +487,13 @@ body {
 .Txt {
     color: white;
     width: 100%;
-    /* padding-left: 2.5rem; */
     margin-top: 2.5rem;
     text-align: center;
 }
 
 .Txt h1 {
     font-size: 2.25rem;
-    /* 36px */
     line-height: 2.5rem;
-    /* 40px */
     text-align: center;
     margin-top: 2.5rem;
 }
@@ -631,7 +608,6 @@ body {
     z-index: 99;
     top: -100%;
     transition: top ease 0.5s;
-    /* display: none; */
     backdrop-filter: blur(5px);
     overflow: hidden;
 }
@@ -790,9 +766,9 @@ body {
 
 
 .form-group input:focus+label,
-.form-group textarea:focus+label ,
-.form-group input:not(:placeholder-shown) + label,
-.form-group textarea:not(:placeholder-shown) + label{
+.form-group textarea:focus+label,
+.form-group input:not(:placeholder-shown)+label,
+.form-group textarea:not(:placeholder-shown)+label {
     top: 0px;
     left: 10px;
     color: #ffffff;
@@ -815,25 +791,25 @@ body {
 
 /* Toastr Css */
 .toast-success {
-    background-color: #28a745 !important; /* Green for success */
+    background-color: #28a745 !important;
     color: white !important;
 }
+
 .toast-error {
-    background-color: #dc3545 !important; /* Red for error */
+    background-color: #dc3545 !important;
     color: white !important;
 }
+
 .toast-warning {
     z-index: 100;
-    background-color: #ffbf00 !important; /* Yellow for warning */
+    background-color: #ffbf00 !important;
     color: black !important;
 }
-/* .toast {
-    opacity: 1 !important; 
-} */
+
 
 @media (max-width:420px) {
 
-    .text-wrapper{
+    .text-wrapper {
         font-size: 18vw;
     }
 
@@ -866,7 +842,6 @@ body {
     }
 
     .mainTxt {
-        /* letter-spacing: -0.05em; */
         margin-left: 1rem;
         margin-top: 1.5rem;
 
@@ -900,7 +875,7 @@ body {
         font-size: 1.8rem;
     }
 
-    .link{
+    .link {
         gap: 5vw;
         font-size: 10vw;
     }
@@ -932,7 +907,6 @@ body {
 
     .msg {
         font-size: 5vw;
-        /* text-align: center; */
     }
 
 
@@ -940,17 +914,13 @@ body {
     .skills h1 {
         text-align: center;
         font-size: 2.25rem;
-        /* 36px */
         margin-left: 0vw;
         line-height: 2.5rem;
-        /* 40px */
     }
 
     .skills h2 {
         font-size: 1.5rem;
-        /* 24px */
         line-height: 2rem;
-        /* 32px */
         text-align: center;
         margin-top: 2vw;
         margin-left: 0vw;
@@ -1128,7 +1098,7 @@ body {
         margin-top: 5vw;
     }
 
-   
+
 
 }
 
@@ -1147,11 +1117,6 @@ body {
         display: block;
         width: 100%;
     }
-
-    /* .navbar img{
-    width: 10vw;
-    height: 10vw;
-  } */
 
     .Home {
         margin-top: 8rem;
@@ -1187,7 +1152,6 @@ body {
 
     .mainTxt h1 {
         font-size: 15vw;
-        /* 60px */
         line-height: 1.4;
     }
 
@@ -1201,7 +1165,7 @@ body {
         width: 50%;
     }
 
-    .link{
+    .link {
         gap: 5vw;
         font-size: 11vw;
     }
@@ -1234,23 +1198,18 @@ body {
 
     .msg {
         font-size: 4vw;
-        /* text-align: center; */
     }
 
     .skills h1 {
         text-align: center;
         font-size: 2.25rem;
-        /* 36px */
         margin-left: 0vw;
         line-height: 2.5rem;
-        /* 40px */
     }
 
     .skills h2 {
         font-size: 1.5rem;
-        /* 24px */
         line-height: 2rem;
-        /* 32px */
         text-align: center;
         margin-top: 2vw;
         margin-left: 0vw;
@@ -1355,11 +1314,6 @@ body {
         border-radius: 50px;
     }
 
-    /* .btn h5{
-    /* line-height: 1vw; */
-    /*s   font-size: 1vw;
-} */
-
     .content h2 {
         font-size: 20vw;
     }
@@ -1429,7 +1383,7 @@ body {
     }
 
 
-    .text-wrapper{
+    .text-wrapper {
         font-size: 18vw;
     }
 
@@ -1465,7 +1419,7 @@ body {
         height: 20rem;
     }
 
-    .link{
+    .link {
         gap: 3vw;
         font-size: 6vw;
     }
@@ -1481,7 +1435,7 @@ body {
 
     }
 
-    .buttons{
+    .buttons {
         gap: 3vw;
     }
 
@@ -1668,16 +1622,13 @@ body {
     .Txt {
         color: white;
         width: 100%;
-        /* padding-left: 2.5rem; */
         margin-top: 2.5rem;
         text-align: center;
     }
 
     .Txt h1 {
         font-size: 2.25rem;
-        /* 36px */
         line-height: 2.5rem;
-        /* 40px */
         text-align: center;
         margin-top: 2.5rem;
     }
@@ -1702,7 +1653,7 @@ body {
         height: 25rem;
     }
 
-    .text-wrapper{
+    .text-wrapper {
         font-size: 18vw;
     }
 
@@ -1731,7 +1682,6 @@ body {
 
     .msg {
         line-height: 2.25rem;
-        /* 36px */
         margin-left: 2.5rem;
         font-size: 2vw;
         margin-right: 0vw;
@@ -1877,7 +1827,7 @@ body {
         width: 100%;
     }
 
-    .text-wrapper{
+    .text-wrapper {
         font-size: 18vw;
     }
 
@@ -1925,7 +1875,8 @@ body {
         border-radius: 50px;
         font-size: 3vw;
     }
-    .link{
+
+    .link {
         gap: 3vw;
         font-size: 4vw;
     }
@@ -1937,9 +1888,10 @@ body {
 }
 
 @media (width:1024px) and (height:600px) {
-    .Home{
+    .Home {
         margin-top: 5rem;
     }
+
     .content {
         margin-top: 60vh;
         width: 100%;
@@ -1986,6 +1938,8 @@ body {
     }
 }
 
+
+
 /* Section Fade In Animation part */
 
 .hide {
@@ -2009,7 +1963,6 @@ body {
     width: 100%;
     height: 100vh;
     z-index: 1000;
-    /* top:0; */
     background-color: #0f0f0f;
     flex-direction: column;
 

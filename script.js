@@ -139,37 +139,6 @@ document.addEventListener('DOMContentLoaded', () => {
             marginTop: "0%"
         })
 
-    // document.querySelectorAll(".elem").forEach(function (elem) {
-    // //     var rotate = 0;
-    // //     var diffrot = 0;
-
-    // //     elem.addEventListener("mouseleave", function (dets) {
-
-    // //         gsap.to(elem.querySelector("img"), {
-    // //             opacity: 0,
-    // //             ease: Power3,
-    // //             duration: 0.5,
-    // //         });
-    // //     });
-
-    // //     elem.addEventListener("mousemove", function (dets) {
-
-
-
-
-    // //         var diff = dets.clientY - elem.getBoundingClientRect().top;
-    // //         diffrot = dets.clientX - rotate;
-    // //         rotate = dets.clientX;
-    // //         gsap.to(elem.querySelector("img"), {
-    // //             opacity: 1,
-    // //             ease: Power3,
-    // //             top: diff,
-    // //             left: dets.clientX,
-    // //             rotate: gsap.utils.clamp(-30, 30, diffrot * 0.8),
-    // //         });
-    // //     });
-    //  });
-
 
     let currenScroll = 0;
     let isScrollDown = true;
@@ -303,17 +272,14 @@ document.addEventListener('DOMContentLoaded', () => {
             .then(response => response.json())
             .then(data => {
                 if (data.success) {
-                    // alert('Message sent successfully!');
                     toastr.success("Message sent successfully!", "Thank you");
                     form.reset();  // Reset the form after successful submission
                 } else {
-                    // alert('Failed to send message. Please try again.');
                     toastr.warning("Failed to send message. Please try again later.", "Sorry!!!");
                 }
             })
             .catch(error => {
                 console.error('Error:', error);
-                // alert('Failed to send message. Please try again.');
                 toastr.error("Failed to send message. Please try again.", "Sorry!!!");
             });
     });
