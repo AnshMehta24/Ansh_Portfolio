@@ -22,7 +22,6 @@ Please note that this project is still under development and is not yet complete
 - **Projects:** Gallery showcasing selected projects with descriptions and links to live demos or repositories.
 - **Blog:** A section to share my thoughts on industry trends, tutorials, and personal experiences.
 - **Testimonials:** Client and colleague testimonials to highlight my professional relationships and work ethic.
-- **SEO Optimization:** Ensuring the website is fully optimized for search engines.
 
 ## Technologies Used
 - **Frontend:** HTML, CSS, JavaScript
